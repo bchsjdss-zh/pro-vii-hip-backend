@@ -17,7 +17,9 @@
 - **stable-diffusion.cpp**（`-DGGML_HIP=ON -DAMDGPU_TARGETS=gfx906`），生图走 HIP 而非官方预编译包的 Vulkan
 - **llama.cpp**（HIP 版 `llama-bench` / `llama-cli` / `llama-server`），LLM 推理大幅提速（见下方性能表）
 
-**为什么需要自编译 / Why self-compile**：ROCm **6.4 起 gfx906 被移出官方支持矩阵**，6.3 / 5.7.1 是最后可用的档位；官方预编译包只带 Vulkan 后端，而这张卡的 HIP 后端只有自编译一条路。本仓库归档了我们实测跑通的全部脚本、补丁链与日志，国内老卡（gfx906 系）用户可直接复用。
+**为什么需要自编译 / Why self-compile**：ROCm **6.4 起 gfx906 被移出官方支持矩阵**；官方预编译包只带 Vulkan 后端，而这张卡的 HIP 后端只有自编译一条路。本仓库归档了我们实测跑通的全部脚本、补丁链与日志，国内老卡（gfx906 系）用户可直接复用。
+
+**ROCm 版本选型（实测）**：已先后在 **5.7.1 与 6.1.2** 上编译跑通。**6.1 是全系最快档**——tg128 25.39 t/s（5.7.1 为 24.90，+2%），prefill 236 t/s 显著领先；安装用官方 repo.radeon.com 直连源 + APT pin（见 `bench/ROCM61-EVAL.md`）。社区 mi50 定制 fork（gfx906-llama-cpp）经对照评测**判负**：慢 33%，根因是旧基线（ggml 0.25.1 vs master 0.28.0）。
 
 *环境实测：Ubuntu 26.04 · i5-4590 · Radeon Pro VII 16GB HBM2（Vega20 / gfx906）*
 
@@ -28,9 +30,9 @@
 ```
 scripts/   编译全流程编排脚本（取源→解包→configure→编译→等待）
 logs/      build-hip / build-hip2 / build-hip3 三轮 configure 与编译日志
-configs/   三套 build 目录的 CMakeCache 关键 flag 提取 + 源码包 sha256
+configs/   三套 build 目录的 CMakeCache 关键 flag 提取 + 源码包 sha256 + rocm61 flag
 patches/   编译补丁链说明（PATCHES.md，四层修复 + 判别顺序）
-bench/     性能实测数据（HIP vs Vulkan）
+bench/     性能实测数据（HIP vs Vulkan）+ ROCm 6.1 对照评测 + MTP 参数
 ```
 
 ---
@@ -80,10 +82,13 @@ LD_LIBRARY_PATH=/opt/rocm/lib:/opt/rocm/hip/lib ./sd-cli ...
 | Qwen-Image 2.1 · 8 步 | 61.5 s | 78 s | **快 27%** |
 | llama.cpp · 27B Q3_K_S · tg128 | 24.90 t/s | 12.65 t/s | **快 97%** |
 | llama.cpp · 27B · 真实对话 | 24.7 t/s | 7.4 t/s | **快 234%** |
+| llama.cpp · 27B · tg128（ROCm 6.1） | 25.39 t/s | — | — |
+| llama.cpp · 27B · MTP n=2（ROCm 6.1 真对话） | 28.42 t/s | — | — |
 
 > 口径：`快 X%` = (Vulkan 耗时 ÷ HIP 耗时 − 1)，正值一律表示 HIP 更快，所有行同向可比。
 > HIP 收益随分辨率上升才显现（1024² 持平、1448² 起快 58%）——低分辨率小图别指望换后端提速。
 > 表格左侧 `sd-cli` 用时 = 采样时间（不含 VAE 解码），LLM 口径带备注见 `bench/BENCH.md`。
+> ROCm 6.1 起升级为最快档：tg128 25.39、MTP n=2 真对话 28.42（`--spec-draft-n-max 2`，默认 n=3 反而 -17%）——详见 `bench/ROCM61-EVAL.md`。
 
 ---
 
@@ -107,4 +112,5 @@ This repository archives the self-built **HIP backend build chain for Radeon Pro
 - **What's inside**: build orchestration scripts (`scripts/`), three generations of configure/build logs (`logs/`), CMakeCache flags (`configs/`), the four-layer patch chain that makes gfx906 compilation succeed (`patches/PATCHES.md`), and measured benchmarks vs Vulkan (`bench/BENCH.md`).
 - **Key fixes**: gcc/g++ for the CPU backend (ROCm clang hangs the LLVM backend), bare ROCm clang++ for HIP (hipcc wrapper is rejected by CMake), `-DSD_USE_UPSTREAM_GGML` must be injected as a real compile macro, and `-Wl,--allow-multiple-definition` for duplicate bfloat16 symbols.
 - **Results**: HIP is up to **65% faster** than Vulkan on larger canvases for image generation, and ~**2× faster** for llama.cpp inference (24.9 vs 12.65 t/s, 27B Q3_K_S). All deltas are reported as "HIP faster by X%" with Vulkan as the baseline; see `bench/BENCH.md`.
+- **2026-10-29 update**: **ROCm 6.1.2** verified as the fastest release for gfx906 (tg128 25.39 t/s, +2% over 5.7.1; prefill 236 t/s); MTP speculative decoding at `--spec-draft-n-max 2` reaches **28.42 t/s** real chat. The community `gfx906-llama-cpp` fork was benchmarked and **rejected** (33% slower — stale ggml 0.25.1 baseline vs master 0.28.0). Full matrix in `bench/ROCM61-EVAL.md`.
 - **License**: MIT (scripts/docs); upstream projects remain MIT.

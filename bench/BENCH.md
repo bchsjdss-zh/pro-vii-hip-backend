@@ -38,3 +38,11 @@
 
 - 带宽口径：tg128 24.90 t/s × 11.77GB ≈ 293 GB/s 有效（标称 1024 GB/s 的 ~29%）；Vulkan 同模型仅约 149 GB/s。瓶颈在码本解量化算子，不是 HBM2 带宽。
 - 换后端零迁移：sd.cpp/llama.cpp 都吃 GGUF，模型文件直接复用，只换快慢。
+
+## ROCm 6.1 升级（2026-10-29 对照评测）
+
+完整矩阵、编译 flag 与 MTP 参数坑见 **[`ROCM61-EVAL.md`](./ROCM61-EVAL.md)**（本目录）。要点：
+
+- tg128 24.90 → **25.39**（6.1 master vs 5.7.1 master，+2%）；pp512 236.57
+- 社区 mi50 fork（gfx906-llama-cpp）**判负**：17.02 t/s（-33%），根因旧基线 ggml 0.25.1
+- MTP 推测解码（`--model-draft … --spec-draft-n-max 2`）：真对话 **28.42 t/s（+17%）**；默认 n=3 反而 -17%，必须显式锁 2
