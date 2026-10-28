@@ -1,0 +1,39 @@
+-- Use HIPBLAS as backend stable-diffusion
+-- stable-diffusion.cpp version unknown
+-- stable-diffusion.cpp commit unknown
+-- Build static library
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- GGML_SYSTEM_ARCH: x86
+-- Including CPU backend
+-- x86 detected
+-- Adding CPU backend variant ggml-cpu: -march=native 
+CMake Error at /usr/share/cmake-3.22/Modules/CMakeDetermineHIPCompiler.cmake:50 (message):
+  CMAKE_HIP_COMPILER is set to the hipcc wrapper:
+
+   /opt/rocm-5.7.1/bin/hipcc
+
+  This is not supported.  Use Clang directly, or let CMake pick a default.
+Call Stack (most recent call first):
+  /opt/llama.cpp-master/ggml/src/ggml-hip/CMakeLists.txt:43 (enable_language)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/data/opt/sd-cpp/build-hip2/CMakeFiles/CMakeOutput.log".
+You have changed variables that require your cache to be deleted.
+Configure will be re-run and you may have to reset some variables.
+The following variables have changed:
+CMAKE_C_COMPILER= /usr/bin/gcc
+CMAKE_CXX_COMPILER= /usr/bin/g++
+CMAKE_C_COMPILER= /usr/bin/gcc
+CMAKE_CXX_COMPILER= /usr/bin/g++
+
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    GGML_HIPBLAS
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+CONFIG_EXIT=1

@@ -1,0 +1,408 @@
+[  2%] Building C object thirdparty/CMakeFiles/sd-utf8proc.dir/utf8proc/utf8proc.c.o
+[  2%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/ascii.c.o
+[  2%] Building C object thirdparty/CMakeFiles/zip.dir/zip.c.o
+[  3%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o
+In file included from /data/opt/sd-cpp/thirdparty/zip.c:40:
+/data/opt/sd-cpp/thirdparty/./miniz.h:4988:9: warning: Using fopen, ftello, fseeko, stat() etc. path for file I/O - this path may not support large files. [-W#pragma-messages]
+#pragma message(                                                               \
+        ^
+[  3%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/regcomp.c.o
+[  3%] Built target sd-utf8proc
+[  4%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/regenc.c.o
+[  4%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o
+[  4%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/regerror.c.o
+[  4%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o
+[  4%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/regexec.c.o
+[  5%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/regparse.c.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o
+1 warning generated.
+[  6%] Built target zip
+[  6%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/st.c.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-backend-meta.cpp.o
+[  6%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o
+[  6%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/unicode.c.o
+[  7%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o
+[  8%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/unicode_fold1_key.c.o
+[  8%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/unicode_fold2_key.c.o
+[  8%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/unicode_fold3_key.c.o
+[  8%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/unicode_unfold_key.c.o
+[  9%] Building C object thirdparty/CMakeFiles/onig.dir/oniguruma/utf8.c.o
+[  9%] Building C object ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o
+[  9%] Built target onig
+[  9%] Building CXX object ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o
+In file included from /opt/llama.cpp-master/ggml/src/ggml-quants.c:17:
+/opt/rocm-5.7.1/llvm/bin/../include/omp.h:53:9: warning: ISO C restricts enumerator values to range of 'int' (2147483648 is too large) [-Wpedantic]
+        omp_sched_monotonic = 0x80000000
+        ^                     ~~~~~~~~~~
+/opt/rocm-5.7.1/llvm/bin/../include/omp.h:425:7: warning: ISO C restricts enumerator values to range of 'int' (18446744073709551615 is too large) [-Wpedantic]
+      KMP_ALLOCATOR_MAX_HANDLE = UINTPTR_MAX
+      ^                          ~~~~~~~~~~~
+/opt/rocm-5.7.1/llvm/bin/../include/omp.h:441:7: warning: ISO C restricts enumerator values to range of 'int' (18446744073709551615 is too large) [-Wpedantic]
+      KMP_MEMSPACE_MAX_HANDLE = UINTPTR_MAX
+      ^                         ~~~~~~~~~~~
+/opt/rocm-5.7.1/llvm/bin/../include/omp.h:487:39: warning: ISO C restricts enumerator values to range of 'int' (18446744073709551615 is too large) [-Wpedantic]
+    typedef enum omp_event_handle_t { KMP_EVENT_MAX_HANDLE = UINTPTR_MAX } omp_event_handle_t;
+                                      ^                      ~~~~~~~~~~~
+/opt/rocm-5.7.1/llvm/bin/../include/omp.h:524:54: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+    extern void *llvm_omp_target_dynamic_shared_alloc();
+                                                     ^
+                                                      void
+5 warnings generated.
+[ 10%] Linking CXX static library libggml-base.a
+[ 10%] Built target ggml-base
+[ 11%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o
+[ 11%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o
+[ 11%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o
+Scanning dependencies of target ggml-hip
+[ 12%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/acc.cu.o
+In file included from /opt/llama.cpp-master/ggml/src/ggml-cpu/ggml-cpu.c:43:
+/opt/rocm-5.7.1/llvm/bin/../include/omp.h:53:9: warning: ISO C restricts enumerator values to range of 'int' (2147483648 is too large) [-Wpedantic]
+        omp_sched_monotonic = 0x80000000
+        ^                     ~~~~~~~~~~
+/opt/rocm-5.7.1/llvm/bin/../include/omp.h:425:7: warning: ISO C restricts enumerator values to range of 'int' (18446744073709551615 is too large) [-Wpedantic]
+      KMP_ALLOCATOR_MAX_HANDLE = UINTPTR_MAX
+      ^                          ~~~~~~~~~~~
+/opt/rocm-5.7.1/llvm/bin/../include/omp.h:441:7: warning: ISO C restricts enumerator values to range of 'int' (18446744073709551615 is too large) [-Wpedantic]
+      KMP_MEMSPACE_MAX_HANDLE = UINTPTR_MAX
+      ^                         ~~~~~~~~~~~
+/opt/rocm-5.7.1/llvm/bin/../include/omp.h:487:39: warning: ISO C restricts enumerator values to range of 'int' (18446744073709551615 is too large) [-Wpedantic]
+    typedef enum omp_event_handle_t { KMP_EVENT_MAX_HANDLE = UINTPTR_MAX } omp_event_handle_t;
+                                      ^                      ~~~~~~~~~~~
+/opt/rocm-5.7.1/llvm/bin/../include/omp.h:524:54: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+    extern void *llvm_omp_target_dynamic_shared_alloc();
+                                                     ^
+                                                      void
+5 warnings generated.
+[ 12%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/add-id.cu.o
+[ 12%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o
+[ 12%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/allreduce.cu.o
+[ 12%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o
+[ 13%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o
+[ 13%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/arange.cu.o
+[ 13%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o
+[ 14%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/argmax.cu.o
+[ 14%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/argsort.cu.o
+[ 14%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o
+[ 15%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/tiled/tiled.cpp.o
+[ 15%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/tiled/tiled-kernel.cpp.o
+[ 15%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/binbcast.cu.o
+[ 16%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/clamp.cu.o
+[ 16%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o
+[ 16%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/col2im-1d.cu.o
+[ 17%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o
+[ 17%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o
+[ 17%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/concat.cu.o
+[ 18%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/conv-transpose-1d.cu.o
+[ 18%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o
+[ 19%] Building C object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/quants.c.o
+[ 19%] Building CXX object ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.o
+[ 19%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d-dw.cu.o
+fatal error: error in backend: Instruction Combining seems stuck in an infinite loop after 1000 iterations.
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /opt/rocm-5.7.1/llvm/bin/clang++ -DGGML_MAX_NAME=160 -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_OPENMP -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -I/opt/llama.cpp-master/ggml/src/.. -I/opt/llama.cpp-master/ggml/src/. -I/opt/llama.cpp-master/ggml/src/ggml-cpu -I/opt/llama.cpp-master/ggml/src/../include -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -march=native -fopenmp=libomp -std=gnu++17 -MD -MT ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o -MF CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o.d -o CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o -c /opt/llama.cpp-master/ggml/src/ggml-cpu/ops.cpp
+1.	<eof> parser at end of file
+2.	Optimizer
+fatal error: error in backend: Instruction Combining seems stuck in an infinite loop after 1000 iterations.
+PLEASE submit a bug report to https://github.com/llvm/llvm-project/issues/ and include the crash backtrace, preprocessed source, and associated run script.
+Stack dump:
+0.	Program arguments: /opt/rocm-5.7.1/llvm/bin/clang++ -DGGML_MAX_NAME=160 -DGGML_SCHED_MAX_COPIES=4 -DGGML_USE_CPU_REPACK -DGGML_USE_OPENMP -D_GNU_SOURCE -D_XOPEN_SOURCE=600 -I/opt/llama.cpp-master/ggml/src/.. -I/opt/llama.cpp-master/ggml/src/. -I/opt/llama.cpp-master/ggml/src/ggml-cpu -I/opt/llama.cpp-master/ggml/src/../include -O3 -DNDEBUG -fPIC -Wmissing-declarations -Wmissing-noreturn -Wall -Wextra -Wpedantic -Wcast-qual -Wno-unused-function -Wunreachable-code-break -Wunreachable-code-return -Wmissing-prototypes -Wextra-semi -march=native -fopenmp=libomp -std=gnu++17 -MD -MT ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.o -MF CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.o.d -o CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.o -c /opt/llama.cpp-master/ggml/src/ggml-cpu/arch/x86/repack.cpp
+1.	<eof> parser at end of file
+2.	Optimizer
+ #0  #00x00005de08816f7a6  0x00005a5cdfe797a6llvm::sys::PrintStackTrace(llvm::raw_ostream&, int)  llvm::sys::PrintStackTrace(llvm::raw_ostream&, int)( /opt/rocm-5.7.1/llvm/bin/clang++(+/opt/rocm-5.7.1/llvm/bin/clang++0x254f7a6+)0x254f7a6
+) 
+#1  #10x00005de08816d5f4  0x00005a5cdfe775f4llvm::sys::CleanupOnSignal(unsigned long)  llvm::sys::CleanupOnSignal(unsigned long)( /opt/rocm-5.7.1/llvm/bin/clang++(+/opt/rocm-5.7.1/llvm/bin/clang++0x254d5f4+)0x254d5f4
+) 
+#2  #20x00005de0880ca297  0x00005a5cdfdd4297llvm::CrashRecoveryContext::HandleExit(int)  llvm::CrashRecoveryContext::HandleExit(int)( /opt/rocm-5.7.1/llvm/bin/clang++(+/opt/rocm-5.7.1/llvm/bin/clang++0x24aa297+)0x24aa297
+) 
+#3  #30x00005de088165202  0x00005a5cdfe6f202llvm::sys::Process::Exit(int, bool)  llvm::sys::Process::Exit(int, bool)( /opt/rocm-5.7.1/llvm/bin/clang++(+/opt/rocm-5.7.1/llvm/bin/clang++0x2545202+)0x2545202
+) 
+#4  #40x00005de086987cc7  0x00005a5cde691cc7( /opt/rocm-5.7.1/llvm/bin/clang++(+/opt/rocm-5.7.1/llvm/bin/clang++0xd67cc7+)0xd67cc7
+) 
+#5  #50x00005de0880d35f0  0x00005a5cdfddd5f0llvm::report_fatal_error(llvm::Twine const&, bool)  llvm::report_fatal_error(llvm::Twine const&, bool)( /opt/rocm-5.7.1/llvm/bin/clang++(+/opt/rocm-5.7.1/llvm/bin/clang++0x24b35f0+)0x24b35f0
+) 
+#6  #60x00005de087cd433f  0x00005a5cdf9de33fcombineInstructionsOverFunction(llvm::Function&, llvm::InstructionWorklist&, llvm::AAResults*, llvm::AssumptionCache&, llvm::TargetLibraryInfo&, llvm::TargetTransformInfo&, llvm::DominatorTree&, llvm::OptimizationRemarkEmitter&, llvm::BlockFrequencyInfo*, llvm::ProfileSummaryInfo*, unsigned int, llvm::LoopInfo*)  combineInstructionsOverFunction(llvm::Function&, llvm::InstructionWorklist&, llvm::AAResults*, llvm::AssumptionCache&, llvm::TargetLibraryInfo&, llvm::TargetTransformInfo&, llvm::DominatorTree&, llvm::OptimizationRemarkEmitter&, llvm::BlockFrequencyInfo*, llvm::ProfileSummaryInfo*, unsigned int, llvm::LoopInfo*)InstructionCombining.cpp:0:0 
+InstructionCombining.cpp:0:0 
+#7  #70x00005de087cd46dd  0x00005a5cdf9de6ddllvm::InstCombinePass::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&)  llvm::InstCombinePass::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&)( /opt/rocm-5.7.1/llvm/bin/clang++(+/opt/rocm-5.7.1/llvm/bin/clang++0x20b46dd+)0x20b46dd
+) 
+#8  #80x00005de0883a3a66  0x00005a5ce00ada66llvm::detail::PassModel<llvm::Function, llvm::InstCombinePass, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Function>>::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&)  llvm::detail::PassModel<llvm::Function, llvm::InstCombinePass, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Function>>::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&)( /opt/rocm-5.7.1/llvm/bin/clang++(+/opt/rocm-5.7.1/llvm/bin/clang++0x2783a66+)0x2783a66
+) 
+#9  #90x00005de0869caa8f  0x00005a5cde6d4a8fllvm::detail::PassModel<llvm::Function, llvm::PassManager<llvm::Function, llvm::AnalysisManager<llvm::Function>>, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Function>>::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&)  llvm::detail::PassModel<llvm::Function, llvm::PassManager<llvm::Function, llvm::AnalysisManager<llvm::Function>>, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Function>>::run(llvm::Function&, llvm::AnalysisManager<llvm::Function>&)( /opt/rocm-5.7.1/llvm/bin/clang++(+/opt/rocm-5.7.1/llvm/bin/clang++0xdaaa8f+)0xdaaa8f
+)
+#10#10  0x00005de0872493e60x00005a5cdef533e6  llvm::CGSCCToFunctionPassAdaptor::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)llvm::CGSCCToFunctionPassAdaptor::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x16293e60x16293e6))
+
+#11#11  0x00005de0869be2860x00005a5cde6c8286  llvm::detail::PassModel<llvm::LazyCallGraph::SCC, llvm::CGSCCToFunctionPassAdaptor, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)llvm::detail::PassModel<llvm::LazyCallGraph::SCC, llvm::CGSCCToFunctionPassAdaptor, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0xd9e2860xd9e286))
+
+#12#12  0x00005de087242a0b0x00005a5cdef4ca0b  llvm::PassManager<llvm::LazyCallGraph::SCC, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)llvm::PassManager<llvm::LazyCallGraph::SCC, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x1622a0b0x1622a0b))
+
+#13#13  0x00005de08930f6660x00005a5ce1019666  llvm::detail::PassModel<llvm::LazyCallGraph::SCC, llvm::PassManager<llvm::LazyCallGraph::SCC, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)llvm::detail::PassModel<llvm::LazyCallGraph::SCC, llvm::PassManager<llvm::LazyCallGraph::SCC, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x36ef6660x36ef666))
+
+#14#14  0x00005de087245dfe0x00005a5cdef4fdfe  llvm::DevirtSCCRepeatedPass::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)llvm::DevirtSCCRepeatedPass::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x1625dfe0x1625dfe))
+
+#15#15  0x00005de08930f6b60x00005a5ce10196b6  llvm::detail::PassModel<llvm::LazyCallGraph::SCC, llvm::DevirtSCCRepeatedPass, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)llvm::detail::PassModel<llvm::LazyCallGraph::SCC, llvm::DevirtSCCRepeatedPass, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&>::run(llvm::LazyCallGraph::SCC&, llvm::AnalysisManager<llvm::LazyCallGraph::SCC, llvm::LazyCallGraph&>&, llvm::LazyCallGraph&, llvm::CGSCCUpdateResult&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x36ef6b60x36ef6b6))
+
+#16#16  0x00005de087243aa20x00005a5cdef4daa2  llvm::ModuleToPostOrderCGSCCPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&)llvm::ModuleToPostOrderCGSCCPassAdaptor::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x1623aa20x1623aa2))
+
+#17#17  0x00005de08949e1020x00005a5ce11a8102  llvm::ModuleInlinerWrapperPass::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&)llvm::ModuleInlinerWrapperPass::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x387e1020x387e102))
+
+#18#18  0x00005de08930ede60x00005a5ce1018de6  llvm::detail::PassModel<llvm::Module, llvm::ModuleInlinerWrapperPass, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&)llvm::detail::PassModel<llvm::Module, llvm::ModuleInlinerWrapperPass, llvm::PreservedAnalyses, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x36eede60x36eede6))
+
+#19#19  0x00005de087b602680x00005a5cdf86a268  llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&)llvm::PassManager<llvm::Module, llvm::AnalysisManager<llvm::Module>>::run(llvm::Module&, llvm::AnalysisManager<llvm::Module>&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x1f402680x1f40268))
+
+#20#20  0x00005de0883b43440x00005a5ce00be344  (anonymous namespace)::EmitAssemblyHelper::RunOptimizationPipeline(clang::BackendAction, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>&, std::unique_ptr<llvm::ToolOutputFile, std::default_delete<llvm::ToolOutputFile>>&)(anonymous namespace)::EmitAssemblyHelper::RunOptimizationPipeline(clang::BackendAction, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>&, std::unique_ptr<llvm::ToolOutputFile, std::default_delete<llvm::ToolOutputFile>>&)  BackendUtil.cpp:0:0BackendUtil.cpp:0:0
+
+#21#21  0x00005de0883b72cd0x00005a5ce00c12cd  clang::EmitBackendOutput(clang::DiagnosticsEngine&, clang::HeaderSearchOptions const&, clang::CodeGenOptions const&, clang::TargetOptions const&, clang::LangOptions const&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>)clang::EmitBackendOutput(clang::DiagnosticsEngine&, clang::HeaderSearchOptions const&, clang::CodeGenOptions const&, clang::TargetOptions const&, clang::LangOptions const&, llvm::StringRef, llvm::Module*, clang::BackendAction, llvm::IntrusiveRefCntPtr<llvm::vfs::FileSystem>, std::unique_ptr<llvm::raw_pwrite_stream, std::default_delete<llvm::raw_pwrite_stream>>)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x27972cd0x27972cd))
+
+#22#22  0x00005de0892b043e0x00005a5ce0fba43e  clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&)clang::BackendConsumer::HandleTranslationUnit(clang::ASTContext&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x369043e0x369043e))
+
+#23#23  0x00005de08a03d8e90x00005a5ce1d478e9  clang::ParseAST(clang::Sema&, bool, bool)clang::ParseAST(clang::Sema&, bool, bool)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x441d8e90x441d8e9))
+
+#24#24  0x00005de088bb40790x00005a5ce08be079  clang::FrontendAction::Execute()clang::FrontendAction::Execute()  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x2f940790x2f94079))
+
+#25#25  0x00005de088b3a6810x00005a5ce0844681  clang::CompilerInstance::ExecuteAction(clang::FrontendAction&)clang::CompilerInstance::ExecuteAction(clang::FrontendAction&)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x2f1a6810x2f1a681))
+
+#26#26  0x00005de088c75b080x00005a5ce097fb08  clang::ExecuteCompilerInvocation(clang::CompilerInstance*)clang::ExecuteCompilerInvocation(clang::CompilerInstance*)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0x3055b080x3055b08))
+
+#27#27  0x00005de0869890850x00005a5cde693085  cc1_main(llvm::ArrayRef<char const*>, char const*, void*)cc1_main(llvm::ArrayRef<char const*>, char const*, void*)  ((/opt/rocm-5.7.1/llvm/bin/clang++/opt/rocm-5.7.1/llvm/bin/clang++++0xd690850xd69085))
+
+#28#28  0x00005de0869844fd0x00005a5cde68e4fd  ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&)ExecuteCC1Tool(llvm::SmallVectorImpl<char const*>&, llvm::ToolContext const&)  driver.cpp:0:0driver.cpp:0:0
+
+#29#29  0x00005de08897773d0x00005a5ce068173d  void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const::'lambda'()>(long) Job.cpp:0:0
+#30 0x00005a5cdfdd4187 llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>)void llvm::function_ref<void ()>::callback_fn<clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const::'lambda'()>(long)  (Job.cpp:0:0/opt/rocm-5.7.1/llvm/bin/clang++
++#300x24aa187 )0x00005de0880ca187
+ #31llvm::CrashRecoveryContext::RunSafely(llvm::function_ref<void ()>)  0x00005a5ce0681ad7( /opt/rocm-5.7.1/llvm/bin/clang++clang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const (.part.0)+ 0x24aa187Job.cpp:0:0)
+
+#32#31  0x00005a5ce0641ce10x00005de088977ad7  clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) constclang::driver::CC1Command::Execute(llvm::ArrayRef<std::optional<llvm::StringRef>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>*, bool*) const (.part.0)  (Job.cpp:0:0/opt/rocm-5.7.1/llvm/bin/clang++
++#320x2d17ce1 )0x00005de088937ce1
+ #33clang::driver::Compilation::ExecuteCommand(clang::driver::Command const&, clang::driver::Command const*&, bool) const  0x00005a5ce06426f6( /opt/rocm-5.7.1/llvm/bin/clang++std::_Function_handler<void (), clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const::'lambda'()>::_M_invoke(std::_Any_data const&)+ 0x2d17ce1Compilation.cpp:0:0)
+
+#34#33  0x00005a5ce0647c180x00005de0889386f6  clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) conststd::_Function_handler<void (), clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const::'lambda'()>::_M_invoke(std::_Any_data const&)  (Compilation.cpp:0:0/opt/rocm-5.7.1/llvm/bin/clang++
++#340x2d1dc18 )0x00005de08893dc18
+ #35clang::driver::Compilation::ExecuteJobs(clang::driver::JobList const&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&, bool) const  0x00005a5ce0657efc( /opt/rocm-5.7.1/llvm/bin/clang++clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&)+ 0x2d1dc18()/opt/rocm-5.7.1/llvm/bin/clang++
++#350x2d2defc )0x00005de08894defc
+ #36clang::driver::Driver::ExecuteCompilation(clang::driver::Compilation&, llvm::SmallVectorImpl<std::pair<int, clang::driver::Command const*>>&)  0x00005a5cde690d57( /opt/rocm-5.7.1/llvm/bin/clang++clang_main(int, char**, llvm::ToolContext const&)+ 0x2d2defc()/opt/rocm-5.7.1/llvm/bin/clang++
++#360xd66d57 )0x00005de086986d57
+ #37clang_main(int, char**, llvm::ToolContext const&)  0x00005a5cde5d0633( /opt/rocm-5.7.1/llvm/bin/clang++main+ 0xd66d57()/opt/rocm-5.7.1/llvm/bin/clang++
++#370xca6633 )0x00005de0868c6633
+ #38main  0x000077574c1ded90( /opt/rocm-5.7.1/llvm/bin/clang++__libc_start_call_main+ 0xca6633./csu/../sysdeps/nptl/libc_start_call_main.h:58:16)
+
+#39#38  0x000077574c1dee400x00007043a30ecd90  call_init__libc_start_call_main  ./csu/../csu/libc-start.c:128:20./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+#40#39  0x000077574c1dee400x00007043a30ece40  __libc_start_maincall_init  ./csu/../csu/libc-start.c:379:5./csu/../csu/libc-start.c:128:20
+
+#41#40  0x00005a5cde68a1450x00007043a30ece40  _start__libc_start_main  (./csu/../csu/libc-start.c:379:5/opt/rocm-5.7.1/llvm/bin/clang++
++#410xd60145 )0x00005de086980145
+ _start (/opt/rocm-5.7.1/llvm/bin/clang+++0xd60145)
+clang++: error: clang frontend command failed with exit code 70 (use -v to see invocation)clang++
+: error: clang frontend command failed with exit code 70 (use -v to see invocation)
+AMD clang version 17.0.0 (https://github.com/RadeonOpenCompute/llvm-project roc-5.7.1 23382 f3e174a1d286158c06e4cc8276366b1d4bc0c914)
+AMD clang version 17.0.0 (https://github.com/RadeonOpenCompute/llvm-project roc-5.7.1 23382 f3e174a1d286158c06e4cc8276366b1d4bc0c914)Target: 
+x86_64-unknown-linux-gnuTarget: 
+x86_64-unknown-linux-gnuThread model: 
+posixThread model: 
+posixInstalledDir: 
+/opt/rocm-5.7.1/llvm/binInstalledDir: 
+/opt/rocm-5.7.1/llvm/bin
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/repack-aaddea.cpp
+clang++: note: diagnostic msg: /tmp/repack-aaddea.sh
+clang++: note: diagnostic msg: 
+
+********************
+clang++: note: diagnostic msg: 
+********************
+
+PLEASE ATTACH THE FOLLOWING FILES TO THE BUG REPORT:
+Preprocessed source(s) and associated run script(s) are located at:
+clang++: note: diagnostic msg: /tmp/ops-da0675.cpp
+clang++: note: diagnostic msg: /tmp/ops-da0675.sh
+clang++: note: diagnostic msg: 
+
+********************
+gmake[2]: *** [ggml/src/CMakeFiles/ggml-cpu.dir/build.make:286: ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/x86/repack.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [ggml/src/CMakeFiles/ggml-cpu.dir/build.make:258: ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:313: ggml/src/CMakeFiles/ggml-cpu.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 19%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d-transpose.cu.o
+[ 20%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d.cu.o
+[ 20%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/conv3d.cu.o
+/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d.cu:127:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+static __global__ void conv2d_implicit_gemm_f16(const half * __restrict__ input,
+                       ^
+/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d.cu:127:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d.cu:127:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d.cu:127:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d.cu:127:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d.cu:127:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d.cu:127:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d.cu:127:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/conv2d.cu:127:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+[ 20%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/convert.cu.o
+9 warnings generated when compiling for gfx906.
+[ 21%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/count-equal.cu.o
+[ 21%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/cpy.cu.o
+[ 21%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/cross-entropy-loss.cu.o
+[ 22%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/cumsum.cu.o
+[ 22%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/diag.cu.o
+[ 22%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/diagmask.cu.o
+[ 23%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/dsv4-hc.cu.o
+[ 23%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/fattn-tile.cu.o
+[ 23%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/fattn.cu.o
+[ 24%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/fill.cu.o
+[ 24%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/fwht.cu.o
+[ 24%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/gated-delta-net-mma.cu.o
+[ 25%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/gated_delta_net.cu.o
+[ 25%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/getrows.cu.o
+[ 25%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/ggml-cuda.cu.o
+[ 26%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/gla.cu.o
+[ 26%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/im2col.cu.o
+[ 26%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu.o
+[ 26%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/mean.cu.o
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:255:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+static __global__ void lightning_indexer_kernel_vec(
+                       ^
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:255:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:255:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:255:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:255:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:255:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:255:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:255:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+static __global__ void lightning_indexer_kernel_tile(
+                       ^
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+/opt/llama.cpp-master/ggml/src/ggml-cuda/lightning-indexer.cu:401:24: warning: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled or specified as part of an unsupported transformation ordering [-Wpass-failed=transform-warning]
+[ 27%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/mmf.cu.o
+[ 27%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/mmid.cu.o
+[ 27%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/mmq.cu.o
+24 warnings generated when compiling for gfx906.
+[ 28%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/mmvf.cu.o
+[ 28%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/mmvq.cu.o
+[ 28%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/moe-weighted-reduction.cu.o
+[ 29%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/norm.cu.o
+[ 29%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/opt-step-adamw.cu.o
+[ 29%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/opt-step-sgd.cu.o
+[ 30%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/out-prod.cu.o
+[ 30%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/pad.cu.o
+[ 30%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/pad_reflect_1d.cu.o
+[ 31%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/pool1d.cu.o
+[ 31%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/pool2d.cu.o
+[ 31%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/quantize.cu.o
+[ 32%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/roll.cu.o
+[ 32%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/rope.cu.o
+[ 32%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/scale.cu.o
+[ 33%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/set-rows.cu.o
+[ 33%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/set.cu.o
+[ 33%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/snake.cu.o
+[ 34%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/softcap.cu.o
+[ 34%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/softmax.cu.o
+[ 34%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/solve_tri.cu.o
+[ 35%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/ssm-conv.cu.o
+[ 35%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/ssm-scan.cu.o
+[ 35%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/sum.cu.o
+[ 36%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/sumrows.cu.o
+[ 36%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/top-k-mask.cu.o
+[ 36%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/top-k.cu.o
+[ 36%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/topk-moe.cu.o
+[ 37%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/tri.cu.o
+[ 37%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/tsembd.cu.o
+[ 37%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/unary.cu.o
+[ 38%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/upscale.cu.o
+[ 38%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/wkv.cu.o
+[ 38%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq112-dv112.cu.o
+[ 39%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq128-dv128.cu.o
+[ 39%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq192-dv128.cu.o
+[ 39%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq256-dv256.cu.o
+[ 40%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq320-dv256.cu.o
+[ 40%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq40-dv40.cu.o
+[ 40%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq512-dv512.cu.o
+[ 41%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq576-dv512.cu.o
+[ 41%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq64-dv64.cu.o
+[ 41%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq72-dv72.cu.o
+[ 42%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq80-dv80.cu.o
+[ 42%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-tile-instance-dkq96-dv96.cu.o
+[ 42%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_1-ncols2_16.cu.o
+[ 43%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_1-ncols2_32.cu.o
+[ 43%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_1-ncols2_8.cu.o
+[ 43%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_16-ncols2_1.cu.o
+[ 44%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_16-ncols2_2.cu.o
+[ 44%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_16-ncols2_4.cu.o
+[ 44%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_2-ncols2_16.cu.o
+[ 45%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_2-ncols2_32.cu.o
+[ 45%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_2-ncols2_4.cu.o
+[ 45%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_2-ncols2_8.cu.o
+[ 46%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_32-ncols2_1.cu.o
+[ 46%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_32-ncols2_2.cu.o
+[ 46%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_4-ncols2_16.cu.o
+[ 46%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_4-ncols2_2.cu.o
+[ 47%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_4-ncols2_4.cu.o
+[ 47%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_4-ncols2_8.cu.o
+[ 47%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_64-ncols2_1.cu.o
+[ 48%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_8-ncols2_1.cu.o
+[ 48%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_8-ncols2_2.cu.o
+[ 48%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_8-ncols2_4.cu.o
+[ 49%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-mma-f16-instance-ncols1_8-ncols2_8.cu.o
+[ 49%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-iq1_s.cu.o
+[ 49%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-iq2_s.cu.o
+[ 50%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-iq2_xs.cu.o
+[ 50%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-iq2_xxs.cu.o
+[ 50%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-iq3_s.cu.o
+[ 51%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-iq3_xxs.cu.o
+[ 51%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-iq4_nl.cu.o
+[ 51%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-iq4_xs.cu.o
+[ 52%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-mxfp4.cu.o
+[ 52%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-nvfp4.cu.o
+[ 52%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q1_0.cu.o
+[ 53%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q2_0.cu.o
+[ 53%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q2_k.cu.o
+[ 53%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q3_k.cu.o
+[ 54%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q4_0.cu.o
+[ 54%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q4_1.cu.o
+[ 54%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q4_k.cu.o
+[ 55%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q5_0.cu.o
+[ 55%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q5_1.cu.o
+[ 55%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q5_k.cu.o
+[ 56%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q6_k.cu.o
+[ 56%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmq-instance-q8_0.cu.o
+[ 56%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_1.cu.o
+[ 56%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_10.cu.o
+[ 57%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_11.cu.o
+[ 57%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_12.cu.o
+[ 57%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_13.cu.o
+[ 58%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_14.cu.o
+[ 58%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_15.cu.o
+[ 58%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_16.cu.o
+[ 59%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_2.cu.o
+[ 59%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_3.cu.o
+[ 59%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_4.cu.o
+[ 60%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_5.cu.o
+[ 60%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_6.cu.o
+[ 60%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_7.cu.o
+[ 61%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_8.cu.o
+[ 61%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/mmf-instance-ncols_9.cu.o
+[ 61%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-vec-instance-f16-f16.cu.o
+[ 62%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-vec-instance-q4_0-q4_0.cu.o
+[ 62%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-vec-instance-q8_0-q8_0.cu.o
+[ 62%] Building HIP object ggml/src/ggml-hip/CMakeFiles/ggml-hip.dir/opt/llama.cpp-master/ggml/src/ggml-cuda/template-instances/fattn-vec-instance-bf16-bf16.cu.o
+[ 63%] Linking HIP static library libggml-hip.a
+[ 63%] Built target ggml-hip
+gmake: *** [Makefile:136: all] Error 2

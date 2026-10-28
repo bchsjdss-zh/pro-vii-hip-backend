@@ -1,0 +1,94 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Use HIPBLAS as backend stable-diffusion
+-- stable-diffusion.cpp version unknown
+-- stable-diffusion.cpp commit unknown
+-- Build static library
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Warning: ccache not found - consider installing it for faster compilation or disable this warning with GGML_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: x86_64
+-- GGML_SYSTEM_ARCH: x86
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Including CPU backend
+-- x86 detected
+-- Adding CPU backend variant ggml-cpu: -march=native 
+-- The HIP compiler identification is Clang 17.0.0
+-- Detecting HIP compiler ABI info
+-- Detecting HIP compiler ABI info - done
+-- Check for working HIP compiler: /opt/rocm-5.7.1/llvm/bin/clang++ - skipped
+-- Detecting HIP compile features
+-- Detecting HIP compile features - done
+-- hip::amdhip64 is SHARED_LIBRARY
+-- /usr/bin/c++: CLANGRT compiler options not supported.
+-- hip::amdhip64 is SHARED_LIBRARY
+-- /usr/bin/c++: CLANGRT compiler options not supported.
+-- hip::amdhip64 is SHARED_LIBRARY
+-- /usr/bin/c++: CLANGRT compiler options not supported.
+-- HIP and hipBLAS found
+-- FlashAttention K-V type combinations: f16-f16;q4_0-q4_0;q8_0-q8_0;bf16-bf16
+-- Including HIP backend
+-- ggml version: 0.27.0
+-- ggml commit:  unknown
+CMake Warning at cmake/ggml.cmake:26 (message):
+  Using upstream GGML: INT8 tensorwise/convrot is disabled and FP8 weights
+  are converted to F16 at load time.  Some operators may be unsupported and
+  performance may be lower than with patched GGML.
+Call Stack (most recent call first):
+  CMakeLists.txt:332 (include)
+
+
+-- Looking for include file alloca.h
+-- Looking for include file alloca.h - found
+-- Looking for include file stdint.h
+-- Looking for include file stdint.h - found
+-- Looking for include file sys/times.h
+-- Looking for include file sys/times.h - found
+-- Looking for include file sys/time.h
+-- Looking for include file sys/time.h - found
+-- Looking for include file sys/types.h
+-- Looking for include file sys/types.h - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file inttypes.h
+-- Looking for include file inttypes.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of void*
+-- Check size of void* - done
+-- Looking for alloca
+-- Looking for alloca - found
+-- hip::amdhip64 is SHARED_LIBRARY
+-- /usr/bin/c++: CLANGRT compiler options not supported.
+CMake Warning at examples/server/CMakeLists.txt:58 (message):
+  pnpm not found; frontend build disabled.
+
+
+-- HAVE_INDEX_HTML disabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /data/opt/sd-cpp/build-hip3
+CONFIG_EXIT=0
